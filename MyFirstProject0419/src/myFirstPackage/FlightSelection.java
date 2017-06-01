@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.Select; // contains class to use Select fr
 public class FlightSelection {
 
 	public static void main(String[] args) {
+		
+		// This is just a test comment
 
 		// Declaration and instantiation of objects/variables
 		WebDriver driver;
