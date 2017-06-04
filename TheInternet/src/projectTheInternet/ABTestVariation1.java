@@ -10,7 +10,7 @@ public class ABTestVariation1 {
 		// TODO Auto-generated method stub
 		
 		WebDriver driver;		
-		System.setProperty("wedriver.chrome.driver", "C:\\Users\\saaik\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\saaik\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		
 		driver = new ChromeDriver();
 		String baseUrl ="http://the-internet.herokuapp.com";
@@ -19,10 +19,13 @@ public class ABTestVariation1 {
 		driver.manage().window().maximize();
 		
 		driver.findElement(By.xpath("//a[@href='/abtest']")).click();
-		System.out.println("Clicked");
+		System.out.println(driver.getCurrentUrl());
 		
 		
-
+		driver.navigate().back();
+		System.out.println(driver.getCurrentUrl());
+		
+		driver.close();
 	}
 
 }
