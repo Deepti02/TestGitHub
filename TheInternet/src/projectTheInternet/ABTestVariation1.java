@@ -1,12 +1,14 @@
 package projectTheInternet;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ABTestVariation1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
 		WebDriver driver;		
@@ -24,6 +26,9 @@ public class ABTestVariation1 {
 		
 		driver.navigate().back();
 		System.out.println(driver.getCurrentUrl());
+		
+		BasicAuth myNewBasicAuth = new BasicAuth();
+		myNewBasicAuth.HandleWindowPopUp(driver);
 		
 		driver.close();
 	}
