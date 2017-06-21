@@ -27,9 +27,12 @@ public class ABTestVariation1 {
 		driver.navigate().back();
 		System.out.println(driver.getCurrentUrl());
 		
-		BasicAuth myNewBasicAuth = new BasicAuth();
-		myNewBasicAuth.HandleWindowPopUp(driver);
+		//BasicAuth myNewBasicAuth = new BasicAuth();
+		//myNewBasicAuth.HandleWindowPopUp(driver);
+		//System.out.println(driver.getCurrentUrl());	
 		
+		BrokenImages imageClassObj = new BrokenImages();
+		imageClassObj.HandleBrokenImag(driver);
 		driver.close();
 	}
 

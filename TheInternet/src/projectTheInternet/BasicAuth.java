@@ -12,7 +12,6 @@ public class BasicAuth {
 		Runtime.getRuntime().exec("C:\\Users\\saaik\\Documents\\Deepti\\Study\\AutoITScript\\BasicAuth1.exe");
 		
 		driver.findElement(By.xpath("//a[@href='/basic_auth']")).click();
-		//Runtime.getRuntime().exec("C:\\Users\\saaik\\Documents\\Deepti\\Study\\AutoITScript\\BasicAuth1.exe");
 		System.out.println(driver.getCurrentUrl());		
 	}
 
